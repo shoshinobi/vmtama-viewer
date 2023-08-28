@@ -13,11 +13,13 @@
     <body>
 <h1>VMTAMA Viewer</h1>
         <!-- Import the component -->
-<script type="module" src="static/faucet.glb"></script>
-
+<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer"></script>
 <!-- Use it like any other HTML element -->
-<model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" 
+<model-viewer alt="test model" 
 src="https://platform.vntana.com/api/products/317a58cd-9de3-4701-9990-25daa4ce4aef/download/model/?clientUuid=8faeeaa2-3d2b-4502-9f65-c8a220edc5a3&conversionFormat=GLB&blobId=2896a9dc-0b08-4e1b-a361-7df822bbff80.glb" 
+camera-orbit="45deg 55deg 4m"
+            environment-image="img/envmap.hdr"
+            skybox-image="img/envmap.hdr"
 shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
 
 
