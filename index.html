@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="utf-8">
@@ -8,57 +7,57 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        
     </head>
     <body>
-<h1>VMTAMA Viewer</h1>
-<p>Local model</p>
-    <!-- Import the component -->
-    <script type="importmap">
+        <h1>VMTAMA Viewer</h1>
+        <div id="gallery">
+            <div class="viewer">
+                <p>SN</p>
+                <model-viewer alt="test model" src="static/faucet.gltf" camera-orbit="45deg 55deg 4m" environment-image="img/directional_25.hdr"  shadow-intensity="1" camera-controls touch-action="pan-y">
+</model-viewer>
+            </div>
+            <div class="viewer">
+                <p>SN</p>
+                <model-viewer alt="test model" src="static/orb.gltf" camera-orbit="45deg 55deg 4m" environment-image="img/directional_25.hdr"  shadow-intensity="1" camera-controls touch-action="pan-y">
+</model-viewer>
+            </div>
+            <div class="viewer">
+                <p>SN</p>
+                <model-viewer alt="test model" src="static/matt.gltf" camera-orbit="45deg 55deg 4m" environment-image="img/directional_25.hdr"  shadow-intensity="1" camera-controls touch-action="pan-y">
+</model-viewer>
+            </div>
+            <div class="viewer">
+                <p>SN</p>
+                <model-viewer alt="test model" src="static/plane.gltf" camera-orbit="45deg 55deg 4m" environment-image="img/directional_25.hdr"  shadow-intensity="1" camera-controls touch-action="pan-y">
+</model-viewer>
+            </div>
+            <div class="viewer">
+                <p>SN</p>
+                <model-viewer alt="test model" src="static/cube.gltf" camera-orbit="45deg 55deg 4m" environment-image="img/directional_25.hdr"  shadow-intensity="1" camera-controls touch-action="pan-y">
+</model-viewer>
+            </div>
+            <div class="viewer">
+                <p>SN</p>
+                <model-viewer alt="test model" src="static/ape-flat.gltf" camera-orbit="45deg 55deg 4m" environment-image="img/directional_25.hdr"  shadow-intensity="1" camera-controls touch-action="pan-y">
+</model-viewer>
+            </div>
+            <div class="viewer">
+                <p>SN</p>
+                <model-viewer alt="test model" src="static/ape-smooth.gltf" camera-orbit="45deg 55deg 4m" environment-image="img/directional_25.hdr"  shadow-intensity="1" camera-controls touch-action="pan-y">
+</model-viewer>
+            </div>
+        </div>
+        <!-- Import the component -->
+        <script type="importmap">
         {
             "imports": {
             "three": "https://cdn.jsdelivr.net/npm/three@^0.154.0/build/three.module.min.js"
             }
         }
     </script>
-
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer-module.min.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer-effects/dist/model-viewer-effects.min.js"></script>
-
-<!-- Load a model -->
-<model-viewer
-    alt="test model" 
-    src="static/faucet.glb" 
-    camera-orbit="45deg 55deg 4m"
-    environment-image="img/envmap.hdr"
-    skybox-image="img/envmap.hdr"
-    shadow-intensity="1"
-    camera-controls touch-action="pan-y"
->
-</model-viewer>
-
-
-<p>VNTANA CDN</p>
-
-<!-- Load a model -->
-<model-viewer
-    alt="test model" 
-    src="https://platform.vntana.com/api/products/a5cb7b45-1865-4fa0-a048-ee609bc3b49b/download/model/?clientUuid=fe53560d-0b45-4113-b482-8a603de9adab&conversionFormat=GLB&blobId=98fb2ddc-6cd4-401e-86a1-97f37b72c7b2.glb" 
-    camera-orbit="45deg 55deg 4m"
-    environment-image="img/envmap.hdr"
-    skybox-image="img/envmap.hdr"
-    shadow-intensity="1"
-    camera-controls touch-action="pan-y"
->
-    <effect-composer>
-        <ssao-effect></ssao-effect>
-        <smaa-effect></smaa-effect>
-        <bloom-effect></bloom-effect>
-        <color-grade-effect blend-mode="default"></color-grade-effect>
-    </effect-composer>
-
-</model-viewer>
-
-
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer-module.min.js"></script>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer-effects/dist/model-viewer-effects.min.js"></script>
+        <!-- Load a model -->
+        <!-- Load a model -->
     </body>
 </html>
